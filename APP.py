@@ -46,9 +46,9 @@ def Merge():
     for i in range(len(im_list)):
         im = im_list[i].convert("RGB")
         w, h = im.size
-        im_list[i] = im.resize((w // 3, h // 3))
-        w_list.append(w // 3)
-        h_list.append(h // 3)
+        im_list[i] = im.resize((w // 2, h // 2))
+        w_list.append(w // 2)
+        h_list.append(h // 2)
     width = 100
     for w in w_list:
         width = width + w + 700
